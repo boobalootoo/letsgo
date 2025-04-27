@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #8FBC8F; /* A shade of green */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start of the container */
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px; /* Space between grid items */
+            width: 100%; /* Take up the full width of the container */
+            max-width: 1200px; /* Maximum width for the grid */
+            margin: 0 auto; /* Center the grid */
+        }
+        .grid-item {
+            background-color: #E0EEE0; /* Light green */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+            min-height: 100px; /* Ensure grid items have some minimum height */
+            display: flex; /* Use flexbox for vertical alignment of text */
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plants</h1>
+    </header>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item">Red Algae</div>
+            <div class="grid-item">Moss</div>
+            <div class="grid-item">
+                <b>Oddities and Parasites</b><br>
+                Weird or rare plants (like mistletoe, broomrapes)
+            </div>
+            <div class="grid-item">
+                <b>Grasses and Grasslike Plants</b><br>
+                Not true grasses, but long thin leaves (like mare's tail, loosestrife)
+            </div>
+            <div class="grid-item">
+                <b>Succulents and Stonecrops</b><br>
+                Fat, juicy leaves (like sedums, stonecrops)
+            </div>
+            <div class="grid-item">
+                <b>Ferny or Frilly Leaves</b><br>
+                Plants with very divided or lacey-looking leaves (like meadowsweet, cow parsley)
+            </div>
+            <div class="grid-item">
+                <b>Willow and Poplar Trees</b><br>
+                Fast-growing, drooping or fluttery-leaved trees (willows, aspens)
+            </div>
+            <div class="grid-item">
+                <b>Mallow & Hollyhock Types</b><br>
+                Big soft flowers, often pink or purple (like mallows, hollyhocks)
+            </div>
+            <div class="grid-item">
+                <b>Thorns and Berries</b><br>
+                Plants with spines, thorns or lots of berries (like dog rose, hawthorn)
+            </div>
+            <div class="grid-item">
+                <b>Small White or Pink Flowers</b><br>
+                Tiny, delicate, mostly white or pale pink (like stitchworts, chickweeds)
+            </div>
+            <div class="grid-item">
+                <b>Weird or Sticky Plants</b><br>
+                Sticky, hairy, or odd (like balsam, sundew, loosestrife)
+            </div>
+            <div class="grid-item">
+                <b>Herbs and Scented Plants</b><br>
+                Minty, herbal, or aromatic (like mint, oregano, rosemary)
+            </div>
+            <div class="grid-item">
+                <b>Nettles & Lookalikes</b><br>
+                Stinging or fuzzy nettle-type plants
+            </div>
+            <div class="grid-item">
+                <b>Pea Flowers</b><br>
+                Flowers shaped like sweet peas or clover (like vetch, clovers, broom)
+            </div>
+            <div class="grid-item">
+                <b>Bell-shaped Flowers</b><br>
+                Hanging, bell-shaped blooms (like foxgloves, campanulas, heathers)
+            </div>
+            <div class="grid-item">
+                <b>Daisies and Dandelion Types</b><br>
+                White/yellow daisy-like heads (like oxeye daisy, cornflower, dandelions)
+            </div>
+            <div class="grid-item">
+                <b>Buttercup & Poppy Lookalikes</b><br>
+                Bright yellow, red, simple flowers (like buttercups, poppies, crowfoots)
+            </div>
+            <div class="grid-item">
+                <b>Vines and Creepers</b><br>
+                Twisting or climbing plants (like ivy, honeysuckle, bindweed)
+            </div>
+            <div class="grid-item">
+                <b>Spiky or Prickly Plants</b><br>
+                Thistles, brambles, gorse, sea holly, knapweeds
+            </div>
+             <div class="grid-item">
+                <b>Water Plants</b><br>
+                Floating or swampy (like water-lilies, pond plants)
+            </div>
+            <div class="grid-item">
+                <b>Trees</b><br>
+                Big, woody, tall plants (like oak, birch, beech, chestnut)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
