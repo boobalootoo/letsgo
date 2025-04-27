@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #98FB98;  /* Pale Green */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid-item {
+            background-color: #F0FFF0; /* Honeydew */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fungi</h1>
+    </header>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <b>Mushrooms and Toadstools (Cap-and-Stem Fungi)</b>
+            </div>
+            <div class="grid-item">
+                <b>Puffballs and Earthstars</b><br>
+                These are round fungi that release spores when they mature.
+            </div>
+            <div class="grid-item">
+                <b>Coral Fungi and Club Fungi</b><br>
+                These fungi have branch-like or club-shaped structures.
+            </div>
+            <div class="grid-item">
+                <b>Lichens (Symbiotic Fungi)</b><br>
+                Lichens are a combination of fungi and algae that usually grow on trees, rocks, or other surfaces.
+            </div>
+            <div class="grid-item">
+                <b>Polypores (Bracket Fungi)</b><br>
+                These fungi grow in layers or shelves on trees, logs, or stumps.
+            </div>
+            <div class="grid-item">
+                <b>Rusts, Smuts, and Other Parasites</b><br>
+                These fungi often affect plants and may appear as spots or streaks on leaves.
+            </div>
+            <div class="grid-item">
+                <b>Jelly Fungi and Molds</b><br>
+                These fungi are typically gelatinous or slimy in texture and may look like gels or blobs.
+            </div>
+            <div class="grid-item">
+                <b>Crust Fungi and Skin-like Fungi</b><br>
+                These fungi have flat or crusty bodies that adhere to surfaces, such as tree bark or dead wood.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
